@@ -1,0 +1,5 @@
+[bindings.kotlin]
+package_name = "com.notix.uniffi"
+cdylib_name = "notix_backend"
+
+

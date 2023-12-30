@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src-frontend/components/*"],
+      "@/constants/*": ["./src-frontend/constants/*"],
+      "@/utils/*": ["./src-frontend/utils/*"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "colors.ts", "typings.d.ts"]
+}

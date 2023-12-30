@@ -1,0 +1,4 @@
+namespace notix_backend {
+  string get_note();
+  void start_recording();
+};
