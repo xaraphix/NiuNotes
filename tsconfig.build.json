@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "strict": true,
+
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "react-native",
+        "baseUrl": ".",
+        "paths": {
+            "@components": ["./src-frontend/components/index"],
+            "@constants": ["./src-frontend/constants/index"],
+            "@hooks": ["./src-frontend/hooks/index"],
+            "@screens": ["./src-frontend/screens/index"],
+            "@stores": ["./src-frontend/stores/index"],
+            "@types": ["./src-frontend/types/index"],
+            "@utils": ["./src-frontend/utils/index"]
+        }
+    },
+    "include": ["src-frontend", "nativewind-env.d.ts", "tailwind.colors.js"]
+}

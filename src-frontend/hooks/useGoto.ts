@@ -1,6 +1,6 @@
 import {useLinkTo} from '@react-navigation/native';
 
-const useGoto = () => {
+export const useGoto = () => {
   const linkTo = useLinkTo();
   const goto = (dest: string) => {
     linkTo('/' + dest);
@@ -9,4 +9,3 @@ const useGoto = () => {
   return goto;
 };
 
-export default useGoto;
