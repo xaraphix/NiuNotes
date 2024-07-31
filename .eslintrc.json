@@ -1,0 +1,31 @@
+{
+    "root": true,
+    "extends": [
+        "@react-native",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": true
+    },
+    "plugins": ["@typescript-eslint"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/self-closing-comp": "error",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "react/jsx-curly-brace-presence": [
+            "error",
+            { "props": "never", "children": "never" }
+        ]
+    },
+    "ignorePatterns": ["configs"]
+}
